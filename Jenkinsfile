@@ -3,7 +3,7 @@ pipeline{
 	stages {
 		stage('GIT CHECKOUT'){
 			steps{
-				git clone 'https://github.com/sachinmr2151997/CalenderProjectJava.git'
+				git 'https://github.com/sachinmr2151997/CalenderProjectJava.git'
 			}
 		}
 		stage('BUILD'){
