@@ -1,6 +1,9 @@
 pipeline{
 	agent { label 'master' }
 	stages {
+		stage('GIT CHECKOUT'){
+			steps{
+				git credentialsId: 'github', url:
 		stage('BUILD'){
 			parallel{
 				stage('BUILD1'){
