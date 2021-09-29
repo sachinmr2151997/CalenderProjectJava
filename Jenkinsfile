@@ -3,7 +3,9 @@ pipeline{
 	stages {
 		stage('GIT CHECKOUT'){
 			steps{
-				git credentialsId: 'github', url:
+				git credentialsId: 'github', url: 'https://github.com/sachinmr2151997/CalenderProjectJava.git'
+			}
+		}
 		stage('BUILD'){
 			parallel{
 				stage('BUILD1'){
